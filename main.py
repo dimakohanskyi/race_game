@@ -1,9 +1,15 @@
-from turtle import Turtle, Screen
+from turtle import *
 import random
+
+turtle = Turtle()
+turtle.hideturtle()
+
 
 is_race_on = False
 screen = Screen()
+turtle.screen.title("Race Game")
 screen.setup(width=800, height=600)
+turtle.screen.bgcolor("AntiqueWhite2")
 user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
 colors = ["red", "green", "blue", "purple", "orange", "yellow"]
 y_position = [-180, -90, 0, 90, 180]
